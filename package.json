@@ -8,8 +8,12 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.11.4",
+    "@vue/apollo-composable": "^4.0.2",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "graphql": "^16.9.0",
+    "vue": "^3.2.13",
+    "vue-router": "^4.4.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -32,7 +36,9 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "vue/multi-word-component-names": "off"
+    }
   },
   "browserslist": [
     "> 1%",
